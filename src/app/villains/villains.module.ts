@@ -7,6 +7,7 @@ import { VillainsComponent } from './villains/villains.component';
 import { VillainListComponent } from './villain-list/villain-list.component';
 
 import { VillainService } from './villain.service';
+import { HeroService } from '../heroes/hero.service';
 
 import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../material/material.module';
@@ -19,6 +20,6 @@ import { MaterialModule } from '../material/material.module';
     VillainDetailComponent,
     VillainListComponent
   ],
-  providers: [VillainService]
+  providers: [VillainService, HeroService]
 })
-export class VillainsModule {}
+export class VillainsModule { }

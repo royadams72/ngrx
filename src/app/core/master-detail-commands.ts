@@ -13,4 +13,6 @@ export interface MasterDetailCommands<T> {
   select: (entity: T) => void;
   /** Update an entity */
   update: (entity: T) => void;
+
+  getByKey: (entity: T) => void;
 }

@@ -8,11 +8,11 @@ import { HeroListComponent } from './hero-list/hero-list.component';
 import { HeroService } from './hero.service';
 import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from '../material/material.module';
-
+import { VillainService } from '../villains/villain.service';
 @NgModule({
   imports: [CommonModule, SharedModule, MaterialModule, HeroesRoutingModule],
   exports: [HeroesComponent, HeroDetailComponent],
   declarations: [HeroesComponent, HeroDetailComponent, HeroListComponent],
-  providers: [HeroService]
+  providers: [HeroService, VillainService]
 })
-export class HeroesModule {}
+export class HeroesModule { }

@@ -54,7 +54,10 @@ export class VillainsComponent
   select(villain: Villain) {
     this.selected = villain;
   }
-
+  getByKey(villain: Villain) {
+    this.villainService.getByKey(villain.id)
+    console.log()
+  }
   unselect() {
     this.selected = null;
   }
