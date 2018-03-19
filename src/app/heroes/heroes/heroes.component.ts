@@ -17,7 +17,7 @@ export class HeroesComponent implements MasterDetailCommands<Hero>, OnInit {
   heroes$: Observable<Hero[]>;
   loading$: Observable<boolean>;
   villain: Villain = {
-    id: 1234,
+    id: Math.floor(Math.random() * 100),
     name: "string",
     saying: "string"
   }
